@@ -4,41 +4,46 @@ import RandomImage from '../../components/random-image/RandomImage'
 
 function ItemDisplay() {
   return (
-    <View style={styles.container}>
-      <View style={styles.buttonsGroup}>
-        <View style={styles.delete}></View>
-        <View style={styles.close}></View>
+    <View>
+      <View style={styles.container}>
+        <View style={styles.group}>
+          <View style={styles.delete}></View>
+          <View style={styles.close}></View>
+        </View>
+        <View style={styles.image}>
+          <RandomImage size="medium" />
+        </View>
       </View>
-      <View style={styles.image}></View>
     </View>
   )
 }
 
 const styles = StyleSheet.create({
   container: {
+    backgroundColor: '#0000',
+  },
+  group: {
     flex: 1,
-    backgroundColor: 'black',
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+  },
+  close: {
+    backgroundColor: 'cyan',
+    width: 100,
+    height: 70,
+    margin: 20,
+  },
+  delete: {
+    backgroundColor: 'tomato',
+    width: 100,
+    height: 70,
+    margin: 20,
   },
   image: {
     flex: 4,
-    margin: '3rem',
-    marginBottom: '3rem',
-  },
-  buttonsGroup: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-  },
-  close: {
-    backgroundColor: 'tomato',
-    width: '4rem',
-    height: '4rem',
-    margin: '1rem',
-  },
-  delete: {
-    backgroundColor: '#00CED1',
-    width: '4rem',
-    height: '4rem',
-    margin: '1rem',
+    overflow: 'hidden',
+    marginBottom: 30,
   },
 })
 

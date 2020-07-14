@@ -1,4 +1,3 @@
-import { useDimensions } from '@react-native-community/hooks'
 import React from 'react'
 import { StyleSheet, View } from 'react-native'
 import RandomImage from '../../components/random-image/RandomImage'
@@ -19,7 +18,7 @@ function Loggin() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroudColor: '#ffff',
+    backgroundColor: '#ffff',
   },
   image: {
     flex: 8,
