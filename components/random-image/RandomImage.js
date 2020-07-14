@@ -5,7 +5,7 @@ import { StyleSheet, View, Image } from 'react-native'
 const RandomImage = () => {
   const { window } = useDimensions()
   return (
-    <View>
+    <View style={styles.Image}>
       <Image
         source={{
           uri: `https://picsum.photos/${window.width}/${window.height}`,
@@ -19,4 +19,10 @@ const RandomImage = () => {
 
 export default RandomImage
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({
+  Image: {
+    flex: 1,
+    overflow: 'hidden',
+    justifyContent: 'center',
+  },
+})
