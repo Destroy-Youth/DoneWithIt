@@ -6,7 +6,7 @@ import ItemDisplay from './app/screens/item-display/ItemDisplay'
 export default function App() {
   return (
     <SafeAreaView style={styles.container}>
-      <Logging />
+      <ItemDisplay />
     </SafeAreaView>
   )
 }
@@ -14,7 +14,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#000',
     marginTop: 30,
   },
 })

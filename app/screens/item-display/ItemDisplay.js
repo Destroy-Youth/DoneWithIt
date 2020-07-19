@@ -1,18 +1,16 @@
 import React from 'react'
-import { View, StyleSheet } from 'react-native'
+import { View, StyleSheet, SafeAreaView } from 'react-native'
 import RandomImage from '../../components/random-image/RandomImage'
 
 function ItemDisplay() {
   return (
-    <View>
-      <View style={styles.container}>
-        <View style={styles.group}>
-          <View style={styles.delete}></View>
-          <View style={styles.close}></View>
-        </View>
-        <View style={styles.image}>
-          <RandomImage size="medium" />
-        </View>
+    <View style={styles.container}>
+      <View style={styles.buttonGroup}>
+        <View style={styles.delete}></View>
+        <View style={styles.close}></View>
+      </View>
+      <View style={styles.image}>
+        <RandomImage size="medium" />
       </View>
     </View>
   )
@@ -21,8 +19,9 @@ function ItemDisplay() {
 const styles = StyleSheet.create({
   container: {
     backgroundColor: '#0000',
+    flex: 1,
   },
-  group: {
+  buttonGroup: {
     flex: 1,
     flexDirection: 'row',
     justifyContent: 'space-between',
@@ -32,13 +31,13 @@ const styles = StyleSheet.create({
     backgroundColor: 'cyan',
     width: 100,
     height: 70,
-    margin: 20,
+    margin: 10,
   },
   delete: {
     backgroundColor: 'tomato',
     width: 100,
     height: 70,
-    margin: 20,
+    margin: 10,
   },
   image: {
     flex: 4,

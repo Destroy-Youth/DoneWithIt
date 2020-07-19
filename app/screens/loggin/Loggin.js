@@ -32,7 +32,7 @@ const styles = StyleSheet.create({
   register: {
     width: '100%',
     height: 70,
-    backgroundColor: 'gray',
+    backgroundColor: 'tomato',
   },
   icon: {
     height: 70,
