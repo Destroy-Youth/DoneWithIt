@@ -1,6 +1,7 @@
 import React from 'react'
 import { View, StyleSheet, SafeAreaView } from 'react-native'
 import RandomImage from '../../components/random-image/RandomImage'
+import Colors from '../../config/colors'
 
 function ItemDisplay() {
   return (
@@ -28,13 +29,13 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   close: {
-    backgroundColor: 'cyan',
+    backgroundColor: Colors.primary,
     width: 100,
     height: 70,
     margin: 10,
   },
   delete: {
-    backgroundColor: 'tomato',
+    backgroundColor: Colors.secundary,
     width: 100,
     height: 70,
     margin: 10,

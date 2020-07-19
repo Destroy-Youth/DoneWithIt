@@ -3,6 +3,7 @@ import { StyleSheet, View, Image, ImageBackground, Text } from 'react-native'
 import RandomImage from '../../components/random-image/RandomImage'
 import icon from './../../assets/icon.png'
 import background from './../../assets/logging_background.jpg'
+import Colors from '../../config/colors'
 
 function Loggin() {
   return (
@@ -27,12 +28,12 @@ const styles = StyleSheet.create({
   access: {
     width: '100%',
     height: 70,
-    backgroundColor: 'cyan',
+    backgroundColor: Colors.primary,
   },
   register: {
     width: '100%',
     height: 70,
-    backgroundColor: 'tomato',
+    backgroundColor: Colors.secundary,
   },
   icon: {
     height: 70,
